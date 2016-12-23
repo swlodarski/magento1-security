@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SUMOHeavy_Security>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                Mage_CMS
+            </depends>
+        </SUMOHeavy_Security>
+    </modules>
+</config>

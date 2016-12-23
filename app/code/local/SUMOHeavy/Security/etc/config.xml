@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SUMOHeavy_Security>
+            <version>0.1.0</version>
+        </SUMOHeavy_Security>
+    </modules>
+    <global>
+        <models>
+            <sumoheavy_security>
+                <class>SUMOHeavy_Security_Model</class>
+                <resourceModel>sumoheavy_security_resource</resourceModel>
+            </sumoheavy_security>
+
+            <sumoheavy_security_resource>
+                <class>SUMOHeavy_Security_Model_Resource</class>
+                <entities>
+                    <block_cl>
+                        <table>sumoheavy_security_block_cl</table>
+                    </block_cl>
+                    <config_data_cl>
+                        <table>sumoheavy_security_config_data_cl</table>
+                    </config_data_cl>
+                </entities>
+            </sumoheavy_security_resource>
+        </models>
+
+        <resources>
+            <sumoheavy_security_setup>
+                <setup>
+                    <module>SUMOHeavy_Security</module>
+                </setup>
+            </sumoheavy_security_setup>
+        </resources>
+    </global>
+</config>
