@@ -6,6 +6,11 @@
         </SUMOHeavy_Security>
     </modules>
     <global>
+        <helpers>
+            <sumoheavy_security>
+                <class>SUMOHeavy_Security_Helper</class>
+            </sumoheavy_security>
+        </helpers>
         <models>
             <sumoheavy_security>
                 <class>SUMOHeavy_Security_Model</class>
