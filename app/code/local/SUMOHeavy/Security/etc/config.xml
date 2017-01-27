@@ -2,7 +2,7 @@
 <config>
     <modules>
         <SUMOHeavy_Security>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </SUMOHeavy_Security>
     </modules>
     <global>
@@ -21,6 +21,9 @@
                     <config_data_cl>
                         <table>sumoheavy_security_config_data_cl</table>
                     </config_data_cl>
+                    <rule>
+                        <table>sumoheavy_security_rule</table>
+                    </rule>
                 </entities>
             </sumoheavy_security_resource>
         </models>
