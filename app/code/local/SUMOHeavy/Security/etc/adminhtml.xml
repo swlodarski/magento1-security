@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * SUMOHeavy_Security
+ *
+ * @category   SUMOHeavy
+ * @package    SUMOHeavy_Security
+ * @copyright  Copyright (c) 2017 SUMO Heavy Industries, LLC
+ * @author     Daniel Szubart <support@sumoheavy.com>
+ */
+-->
+<config>
+    <menu>
+        <system>
+            <children>
+                <sumoheavy_security translate="title" module="sumoheavy_security">
+                    <title>SUMOHeavy Security</title>
+                    <sort_order>510</sort_order>
+                    <children>
+                        <rules translate="title" module="sumoheavy_security">
+                            <title>Rules</title>
+                            <action>adminhtml/sumoheavy_rules</action>
+                            <sort_order>510</sort_order>
+                        </rules>
+                    </children>
+                </sumoheavy_security>
+            </children>
+        </system>
+    </menu>
+
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <sumoheavy_security translate="title" module="sumoheavy_security">
+                                <title>SUMOHeavy Security</title>
+                                <children>
+                                    <rules translate="title" module="sumoheavy_security">
+                                        <title>Rules</title>
+                                    </rules>
+                                </children>
+                            </sumoheavy_security>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

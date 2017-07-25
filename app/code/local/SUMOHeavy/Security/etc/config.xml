@@ -2,10 +2,15 @@
 <config>
     <modules>
         <SUMOHeavy_Security>
-            <version>0.1.1</version>
+            <version>0.1.2</version>
         </SUMOHeavy_Security>
     </modules>
     <global>
+        <blocks>
+            <sumoheavy_security>
+                <class>SUMOHeavy_Security_Block</class>
+            </sumoheavy_security>
+        </blocks>
         <helpers>
             <sumoheavy_security>
                 <class>SUMOHeavy_Security_Helper</class>
@@ -41,4 +46,15 @@
             </sumoheavy_security_setup>
         </resources>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <SUMOHeavy_Security before="Mage_Adminhtml">SUMOHeavy_Security_Adminhtml</SUMOHeavy_Security>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
