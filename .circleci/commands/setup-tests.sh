@@ -18,6 +18,7 @@ cp "$repo"/.circleci/local.xml.phpunit app/etc/
 cp "$repo"/.circleci/phpunit.xml.dist .
 
 echo 'Copying module files'
-cp -R "$repo"/app/code/community/SUMOHeavy app/code/community/
+mkdir app/code/local/
+cp -R "$repo"/app/code/local/SUMOHeavy app/code/local/
 cp "$repo"/app/etc/modules/SUMOHeavy_Security.xml app/etc/modules/
 cp -R "$repo"/shell/sumoheavy shell/

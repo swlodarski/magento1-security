@@ -46,9 +46,9 @@ class SUMOHeavy_Security_Model_Rule extends Mage_Core_Model_Abstract
     /**
      * Scans a single CMS Block for all matching rules
      *
-     * @param Mage_Cms_Model_Block $cmsBlock
+     * @param array
      */
-    public function scanCmsBlock(Mage_Cms_Model_Block $cmsBlock)
+    public function scanCmsBlock($cmsBlock)
     {
         $ruleCollection = Mage::getModel('sumoheavy_security/rule')->getCollection();
 

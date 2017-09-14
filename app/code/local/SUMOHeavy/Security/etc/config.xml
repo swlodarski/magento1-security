@@ -57,4 +57,12 @@
             </adminhtml>
         </routers>
     </admin>
+
+    <phpunit>
+        <suite>
+            <modules>
+                <SUMOHeavy_Security />
+            </modules>
+        </suite>
+    </phpunit>
 </config>
